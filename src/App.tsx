@@ -1,9 +1,19 @@
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { AppStoreProvider } from "./store/AppStore";
+import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
+
 function App() {
   return (
-    <div style={{ padding: 40, fontFamily: "system-ui" }}>
-      <h1>Greenlit</h1>
-      <p>Opportunity tracker — coming together.</p>
-    </div>
+    <AppStoreProvider>
+      <HashRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Dashboard />} />
+          </Route>
+        </Routes>
+      </HashRouter>
+    </AppStoreProvider>
   );
 }
 
