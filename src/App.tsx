@@ -6,6 +6,7 @@ import AddEntry from "./pages/AddEntry";
 import EntryDetail from "./pages/EntryDetail";
 import Folders from "./pages/Folders";
 import Applications from "./pages/Applications";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/add" element={<AddEntry />} />
             <Route path="/entry/:id" element={<EntryDetail />} />
             <Route path="/folders" element={<Folders />} />
+            <Route path="/settings" element={<Settings />} />
           </Route>
         </Routes>
       </HashRouter>
