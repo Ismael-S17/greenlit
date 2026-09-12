@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import AddEntry from "./pages/AddEntry";
 import EntryDetail from "./pages/EntryDetail";
+import Folders from "./pages/Folders";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/add" element={<AddEntry />} />
             <Route path="/entry/:id" element={<EntryDetail />} />
+            <Route path="/folders" element={<Folders />} />
           </Route>
         </Routes>
       </HashRouter>
