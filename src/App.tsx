@@ -3,6 +3,7 @@ import { AppStoreProvider } from "./store/AppStore";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import AddEntry from "./pages/AddEntry";
+import EntryDetail from "./pages/EntryDetail";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/add" element={<AddEntry />} />
+            <Route path="/entry/:id" element={<EntryDetail />} />
           </Route>
         </Routes>
       </HashRouter>
