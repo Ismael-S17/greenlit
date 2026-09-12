@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import AddEntry from "./pages/AddEntry";
 import EntryDetail from "./pages/EntryDetail";
 import Folders from "./pages/Folders";
+import Applications from "./pages/Applications";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/applications" element={<Applications />} />
             <Route path="/add" element={<AddEntry />} />
             <Route path="/entry/:id" element={<EntryDetail />} />
             <Route path="/folders" element={<Folders />} />
