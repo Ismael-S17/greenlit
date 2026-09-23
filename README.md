@@ -2,7 +2,7 @@
 
 **A dead-simple opportunity tracker for students juggling job, internship, and scholarship applications across a dozen different platforms.**
 
-Built with React, TypeScript, and Vite · deployed on Vercel
+**[Live demo](https://greenlit-eta.vercel.app)** · Built with React, TypeScript, and Vite · deployed on Vercel
 
 ![Dashboard](docs/screenshot-dashboard.png)
 
